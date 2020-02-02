@@ -1,7 +1,8 @@
-package zajglic.construction.site;
+package zajglic.construction.site.worker;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
 import javax.persistence.*;
@@ -19,6 +20,7 @@ public class Worker {
     @Column (name = "ID")
     private int id;
 
+    @NonNull
     @Column (name = "Name")
     private String name;
 
